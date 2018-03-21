@@ -53,6 +53,9 @@ build:
 	cd sim && make lib build opt
 	cp -r rtl/tb/* $(VSIM_PATH)
 
+verilator:
+	cd verilator && make all
+
 install: $(INSTALL_HEADERS)
 
 vopt:
